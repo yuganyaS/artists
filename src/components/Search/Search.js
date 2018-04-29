@@ -66,7 +66,7 @@ class Layout extends Component {
             <h1 className="error_message">
               {this.state.message ? this.state.message : ''}
             </h1>
-            {this.state.results ? <Pagination pageitem={this.state.results}  /> : ''}
+            {this.state.results&&this.state.results.length ? <Pagination pageitem={this.state.results}  /> : ''}
           </div>
         </Grid.Column>
       </Grid>
